@@ -43,3 +43,27 @@ El funcionamiento de la aplicación será, principalmente, diferenciar entre tre
 <img src="https://i.ibb.co/WxqfT6v/Frame-8.jpg" alt="Frame-8" border="0">
 </br>
 </ul>
+
+# Integrantes del equipo:
+### Alexander Zito Castilla
+  <a href="https://www.linkedin.com/in/alexanderzitocastilla/"><img align="left" alt="LinkedIn" width="26px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"/></a>
+  <a href="https://github.com/alexcastillla"><img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /></a>
+ </br>
+
+### Cristina Rodriguez Duque
+  <a href="https://www.linkedin.com/in/cristina-rodríguez-duque-8ab1111b5/"><img align="left" alt="LinkedIn" width="26px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"/></a>
+  <a href="https://github.com/crduque/"><img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /></a>
+  </br>
+ 
+ ### Manuela Neufeld
+   <a href="https://www.linkedin.com/in/manuela-neufeld-710074154/"><img align="left" alt="LinkedIn" width="26px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"/></a>
+    <a href="https://github.com/manu-neufeld/"><img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /></a>
+</br>
+### Jan Carlo Escobar
+   <a href="https://www.linkedin.com/in/jan-escobar-725410124/"><img align="left" alt="LinkedIn" width="26px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"/></a>
+    <a href="https://github.com/Janescobar92/"><img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /></a>
+    </br>
+### Juan Gonzalez
+  <a href="https://www.linkedin.com/in/juanlgonzalezc/"><img align="left" alt="LinkedIn" width="26px" src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"/></a>
+  <a href="https://github.com/JuanlGLC/"><img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /></a>
+  </br>
