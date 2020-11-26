@@ -1,99 +1,45 @@
-# WebApp boilerplate with React JS
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+# Proyecto Equipo 1: Covid Freezone
 
-<p align="center">
-<a href="https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b"><img src="https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/img/how-to.png?raw=true" /></a>
+Covid Freezone se trata de una aplicación web para controlar aforos y desinfecciones en las distintas salas de uso común de distintas instalaciones, como un coworking, una empresa o universidad.
 </p>
+<p>
+El funcionamiento de la aplicación será, principalmente, diferenciar entre tres tipos de usuarios en donde cada uno verá su versión de la aplicación. Estos usuarios serán:
+</p>
+<ul>
+<li><b>Vista público:</b></li>
+</br>
+<p>En esta vista, el usuario tendrá que acceder a su cuenta de usuario a través del correo y la contraseña que utilizo al registrarse, en caso de no disponer de una cuenta, el usuario tendrá que registrase a través de una clave generada por parte del administrador.</p>
+
+<img align="center" src="https://i.ibb.co/G524NNK/Frame-1.jpg" alt="Frame-1" border="0">
 
 
-### Requirements:
-- Make sure you are using node version 10
 
-1. Install the packages:
-```
-$ npm install
-```
-2. Create a .env file:
-```
-$ cp .env.example .env
-```
-3. Start coding! and the webpack dev server with live reload, for windows, mac, linux or Gitpod:
+<p>Una vez dentro, el usuario podrá generar un código QR que será utilizado para acceder a la sala, en caso de no poder, se le mostrará un aviso de acceso denegado, en caso contrario, se le mostrará al usuario un aviso de acceso permitido seguido del acceso a la siguiente vista que consiste en la visualización del estado actúal de la sala, en donde podrá ver en un vistazo rápido el aforo actual y la última vez que se desinfecto dicha sala.</p>
 
-```bash
-$ npm run start
-```
+<img src="https://i.ibb.co/dgkgzp5/Frame-2.jpg" alt="Frame-2" border="0">
 
-### Styles
-You can update the `styles/index.scss` or create new `.scss` files inside `styles/` and import them into your current scss or js files depending on your needs.
+<li><b>Vista empleado de la limpieza:</b></li>
+</br>
+<p>Una vez logueado en el sistema, se le mostrará una pantalla en donde se le muestran las salas que necesitan desinfectarse, mostrandose en orden de prioridades e identificandose a la vez a través de una escala de colores.</p>
+<p>Una vez seleccionada la sala, el usuario de la limpieza podrá bloquearla para que el resto de usuario públicos no puedan acceder y una vez finalizado, podrá liberarla pulsando el boton correspondiente.</p>
+<p>Cabe destacar, que una vez que se libere, la sala se quedara bloqueada durante un tiempo para que se efectue una completa aireación de está.</p>
 
-### Components
-Add more files into your `./src/js/components` or styles folder as you need them and import them into your current files as needed.
+<img src="https://i.ibb.co/nb4qNVT/Frame-3.jpg" alt="Frame-3" border="0">
 
-**Note (New changes)**: Components have been converted into functions to support the use of hooks:
-* Instead of a class component, we're using a `const` function.
-* Class `constructor` and `state` have been replaced by `useState()` hooks.
-* `componentDidMount()` was replaced by `useEffect({}, [])` - It runs at mount thanks to the second parameter (`[]`).
-* `Actions` and `Store` still work the same way.
+<li><b>Vista administrador:</b></li>
+</br>
+<p>Una vez entrado en el sistema a traves del loguin:</p>
+<img src="https://i.ibb.co/rFpMNwy/Frame-4.jpg" alt="Frame-4" border="0">
 
-```jsx
-// Previous "Class Oriented"
-export class Demo extends React.Component {
-	constructor(props) {
-		super(props);
+<p>Al administrador se le muestra tanto una vista general de cada una de las salas, como la opción de generar nuevas salas, nuevos códigos de acceso para el público y la posibilidad de bloquear salas generando el correspondiente aviso al equipo de limpieza para que efectue su limpieza.</p>
 
-		this.state = getState('code here');
-	}
-}
-
-// New "Functional Oriented"
-export const Demo = () => (
-	const [state, setState] = getState('code here'); //using the state (if needed)
-  const { store, actions } = useContext(Context); // using the context (if needed)
-
-);
-```
-
-💡Note: There is an example using the Context API inside `views/demo.js`;
-
-### Views (Components)
-Add more files into your `./src/js/views` and import them in `./src/js/layout.jsx`.
-
-### Context
-This boilerplate comes with a centralized general Context API. The file `./src/js/store/flux.js` has a base structure for the store, we encourage you to change it and adapt it to your needs.
-
-React Context [docs](https://reactjs.org/docs/context.html)
-BreathCode Lesson [view](https://content.breatheco.de/lesson/react-hooks-explained)
-
-The `Provider` is already set. You can consume from any component using the useContext hook to get the `store` and `actions` from the Context. Check `/views/demo.js` to see a demo.
-
-```jsx
-import { Context } from "../store/appContext";
-const MyComponentSuper = () => {
-  //here you use useContext to get store and actions
-  const { store, actions } = useContext(Context);
-  return <div>{/* you can use your actions or store inside the html */}</div>
-}
-```
-
-## Publish your website!
-
-1. **Vercel:** The FREE recomended hosting provider is [vercel.com](https://vercel.com/), you can deploy in 1 minutes by typing the following 2 commands:
-
-Login (you need to have an account):
-```sh
-$ npm i vercel -g && vercel login
-```
-Deploy:
-```sh
-$ vercel --prod
-```
-✎ Note: If you don't have an account just go to vercel.com, create a account and come back here.
-
-![Vercel example procedure to deploy](https://github.com/4GeeksAcademy/react-hello-webapp/blob/4b530ba091a981d3916cc6e960e370decaf2e234/docs/deploy.png?raw=true)
-
-2. **Github Pages:** This boilerplate is 100% compatible with the free github pages hosting.
-To publish your website you need to push your code to your github repository and run the following command after:
-```sh
-$ npm run deploy
-```
-Note: You will need to [configure github pages for the branch gh-pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages)
+<img src="https://i.ibb.co/b6F3dWV/Frame-7.jpg" alt="Frame-7" border="0">
+</br>
+<img src="https://i.ibb.co/NL3rptD/Frame-6.jpg" alt="Frame-6" border="0">
+</br>
+<li><b>Vista Sala:</b></li>
+</br>
+<p>Por último, se ha desarrollado una vista que se mostraran una vez hayan accedido a la sala. En dicha vista podrán ver en tiempo real el aforo de la sala y el tiempo restante hasta una nueva desinfección.</p>
+<img src="https://i.ibb.co/WxqfT6v/Frame-8.jpg" alt="Frame-8" border="0">
+</br>
+</ul>
