@@ -43,6 +43,15 @@ El funcionamiento de la aplicación será, principalmente, diferenciar entre tre
 <img src="https://i.ibb.co/WxqfT6v/Frame-8.jpg" alt="Frame-8" border="0">
 </br>
 </ul>
+</br>
+
+
+# Figma del proyecto:
+
+</br>
+<a href="https://www.figma.com/file/jxs55IeyRTKJLJfKplUXyY/Covid_free_zone?node-id=0%3A1"><img src="https://i.ibb.co/f03Rzpf/figma.png" alt="figma" border="0" /></a>
+(Pulsar la imágen para abrir el Figma)
+</br>
 
 # Integrantes del equipo:
 ### Alexander Zito Castilla
