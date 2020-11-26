@@ -1,0 +1,37 @@
+.inputs {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 45vh;
+}
+
+.label-login {
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+.input-login {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white;
+    margin-bottom: 1.5rem;
+}
+
+.login-button {
+    height: 7vh;
+    align-self: flex-end;
+    width: 80vw;
+    background-color: #afd885;
+    border-radius: 1rem;
+    border: solid 1px white;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    font-family: Comfortaa;
+    font-weight: bold;
+    font-size: 18px;    
+    margin-bottom: 10vh;
+}
